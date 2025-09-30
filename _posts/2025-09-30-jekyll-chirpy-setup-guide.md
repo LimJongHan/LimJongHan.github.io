@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jekyll Chirpy 테마 설정 가이드"
-date: 2024-12-19 11:30:00 +0900
+date: 2025-09-30 18:30:00 +0900
 categories: [기술]
 tags: [Jekyll, Chirpy, GitHub Pages, 블로그]
 author: LimJongHan
