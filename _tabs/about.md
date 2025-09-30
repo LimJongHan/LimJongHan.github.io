@@ -4,5 +4,51 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# 안녕하세요! 👋
+
+저는 **LimJongHan**입니다. 개발과 일상을 기록하는 블로그에 오신 것을 환영합니다!
+
+## 🚀 저에 대해
+
+- 💻 **개발자**: 웹 개발과 프로그래밍에 관심이 많습니다
+- 📚 **학습자**: 새로운 기술을 배우고 공유하는 것을 좋아합니다
+- 🎯 **목표**: 지속적인 성장과 발전을 추구합니다
+
+## 🛠️ 기술 스택
+
+### 언어
+- JavaScript, TypeScript
+- Python
+- Java
+
+### 프레임워크 & 라이브러리
+- React, Vue.js
+- Node.js
+- Spring Boot
+
+### 도구
+- Git, GitHub
+- Docker
+- AWS, GCP
+
+## 📝 이 블로그에서 다루는 내용
+
+- **개발 관련 글**: 프로그래밍, 웹 개발, 기술 스택
+- **학습 기록**: 새로운 기술을 배우며 겪은 경험들
+- **프로젝트**: 진행 중인 프로젝트나 완료한 프로젝트 소개
+- **일상**: 개발자의 일상과 생각들
+
+## 📬 연락처
+
+- **GitHub**: [@LimJongHan](https://github.com/LimJongHan)
+- **이메일**: [이메일 주소를 입력하세요]
+
+## 🎉 마무리
+
+이 블로그를 통해 지식을 공유하고 함께 성장해나가고 싶습니다. 
+
+읽어주셔서 감사합니다! 🙏
+
+---
+
+*이 블로그는 Jekyll과 Chirpy 테마를 사용하여 만들어졌습니다.*
