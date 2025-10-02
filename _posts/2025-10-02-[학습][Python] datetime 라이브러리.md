@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[학습] [Python] datetime 라이브러리"
+title: "Python datetime 라이브러리 마스터하기 - 기초부터 실전까지"
 date: 2025-10-02 21:30:00 +0900
 categories: [학습, Python]
 tags: [Python, datetime, 날짜시간, 표준라이브러리, 프로그래밍]

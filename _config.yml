@@ -14,12 +14,12 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: JongHan's Blog # the main title
+title: LimJongHan의 개발 블로그 # the main title
 
-tagline: jonghan's blog # it will display as the subtitle
+tagline: Python, 자료구조, 웹개발 학습 기록 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  jonghan's blog!
+  Python 프로그래밍과 자료구조 알고리즘을 체계적으로 학습하는 개발자의 블로그입니다. 기초부터 고급까지 실전 예제와 함께 설명합니다.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
