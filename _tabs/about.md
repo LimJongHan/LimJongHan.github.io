@@ -35,7 +35,7 @@ order: 4
 ## 📬 연락처
 
 - **GitHub**: [@LimJongHan](https://github.com/LimJongHan)
-- **이메일**: [@email]jonghan0330@gmail.com
+- **이메일**: jonghan0330@gmail.com
 
 ## 🎉 마무리
 
