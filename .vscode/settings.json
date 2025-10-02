@@ -26,5 +26,15 @@
   // Run tasks in macOS
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
-  }
+  },
+  // JongHan's Blog specific settings
+  "files.exclude": {
+    "**/POSTING_GUIDE.md": true
+  },
+  // AI Assistant context
+  "cursor.ai.contextFiles": [
+    ".cursorrules",
+    "_config.yml",
+    "_tabs/about.md"
+  ]
 }
