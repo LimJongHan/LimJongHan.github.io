@@ -84,6 +84,40 @@ toc: true
 - **중요**: 명시적으로 푸시를 요청하지 않는 한 Git 푸시하지 않음
 - **푸시 규칙**: 사용자가 "푸시해줘", "push해줘", "업로드해줘" 등으로 명시적으로 요청할 때만 푸시 실행
 - 사용자가 직접 `git add`, `git commit`, `git push` 명령어 실행
+- 커밋은 가능하지만 푸시는 사용자 승인 후에만 실행
+
+### 🚨 HTML Proofer 검증 규칙
+
+#### 링크 보안 규칙
+- **절대 금지**: HTTP 링크 사용 (`http://`)
+- **필수**: 모든 외부 링크는 HTTPS 사용 (`https://`)
+- **자동 검증**: 포스트 작성 후 HTML Proofer로 검증 필수
+- **오류 패턴**: `is not an HTTPS link` 오류 발생 시 즉시 수정
+
+#### post_url 태그 규칙
+- **파일명 정확성**: `post_url` 태그에서 정확한 파일명 사용
+- **형식**: `{% post_url YYYY-MM-DD-[대주제][소주제]제목 %}` (확장자 제외)
+- **오류 패턴**: `Could not find post` 오류 발생 시 파일명 확인
+- **검증**: Jekyll 빌드 전 post_url 태그 유효성 검사
+
+#### 프로토콜 상대 URL 규칙
+- **금지**: `//`로 시작하는 프로토콜 상대 URL
+- **필수**: 명시적 프로토콜 사용 (`https://`)
+- **적용 범위**: DNS prefetch, 외부 리소스 링크
+- **오류 패턴**: `protocol-relative URL` 경고 발생 시 즉시 수정
+
+#### HTML Proofer 검증 프로세스
+1. **로컬 빌드**: `JEKYLL_ENV=production bundle exec jekyll build`
+2. **링크 검증**: `bundle exec htmlproofer _site --disable-external`
+3. **오류 수정**: 발견된 오류 즉시 수정
+4. **재검증**: 수정 후 다시 HTML Proofer 실행
+5. **푸시**: 모든 검증 통과 후에만 푸시
+
+#### 일반적인 오류와 해결책
+- **HTTP 링크**: `http://` → `https://`로 변경
+- **post_url 오류**: 파일명 전체 경로 확인 (날짜+제목)
+- **프로토콜 상대**: `//domain.com` → `https://domain.com`
+- **내부 링크**: 상대 경로 사용 권장
 
 ### 🔒 보안 및 개인정보 보호 규칙
 
@@ -121,16 +155,21 @@ toc: true
 - [ ] 카테고리와 태그 적절히 설정
 - [ ] 관련 포스트 링크 추가
 - [ ] **기존 관련 포스팅들의 "관련된 내 포스팅" 섹션 업데이트**
-- [ ] 레퍼런스 링크 포함
+- [ ] 레퍼런스 링크 포함 (HTTPS 링크만 사용)
 - [ ] 이미지 최적화
 - [ ] 맞춤법 검사
+- [ ] **HTML Proofer 검증 통과** (링크, 이미지, 스크립트 검증)
+- [ ] **post_url 태그 정확성 확인** (파일명 전체 경로)
+- [ ] **외부 링크 HTTPS 확인** (http:// 사용 금지)
 
 ## 🚀 배포 프로세스
 
 1. 로컬에서 미리보기: `bundle exec jekyll serve`
-2. 변경사항 커밋: `git add . && git commit -m "message"`
-3. GitHub에 푸시: `git push origin main`
-4. GitHub Pages에서 확인
+2. **HTML Proofer 검증**: `JEKYLL_ENV=production bundle exec jekyll build && bundle exec htmlproofer _site --disable-external`
+3. **오류 수정**: HTML Proofer 오류 발생 시 즉시 수정
+4. 변경사항 커밋: `git add . && git commit -m "message"`
+5. GitHub에 푸시: `git push origin main`
+6. GitHub Pages에서 확인
 
 ## 📅 날짜 확인 방법
 
