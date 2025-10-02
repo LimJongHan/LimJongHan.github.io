@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "[학습] [Python] [datetime 라이브러리]"
-date: 2025-01-15 14:30:00 +0900
+title: "[학습] [Python] datetime 라이브러리"
+date: 2025-10-02 21:30:00 +0900
 categories: [학습, Python]
 tags: [Python, datetime, 날짜시간, 표준라이브러리, 프로그래밍]
 author: LimJongHan
 toc: true
 ---
+# 📖 관련된 내 포스팅
+
 # 📝 내용
 
 ## 개요
