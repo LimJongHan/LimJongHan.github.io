@@ -2,7 +2,7 @@
 layout: post
 title: "JongHan의 블로그에 오신 것을 환영합니다! 🎉"
 date: 2025-09-30 18:00:00 +0900
-categories: [일상]
+categories: [개발]
 tags: [블로그, Jekyll, Chirpy]
 author: LimJongHan
 ---
