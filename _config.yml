@@ -28,14 +28,14 @@ url: "https://limjonghan.github.io"
 github:
   username: LimJongHan # change to your GitHub username
 
-twitter:
-  username: # change to your Twitter username
+# twitter:
+#   username: # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: LimJongHan
-  email: # change to your email address
+  email: jonghan0330@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://github.com/LimJongHan # change to your GitHub homepage
@@ -58,7 +58,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: GTM-PXSTT9VD # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
