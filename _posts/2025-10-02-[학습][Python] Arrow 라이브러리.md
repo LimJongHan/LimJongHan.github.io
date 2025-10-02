@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python Arrow 라이브러리 완벽 가이드 - 날짜시간 처리의 모든 것"
+title: "[학습] [Python] Arrow 라이브러리"
 date: 2025-10-02 21:50:00 +0900
 categories: [학습, Python]
 tags: [Python, Arrow, datetime, 날짜시간, 외부라이브러리, 프로그래밍]
