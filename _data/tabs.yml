@@ -5,55 +5,34 @@
   url: /
   icon: fas fa-home
 
-- name: Archives
-  url: /archives/
-  icon: fas fa-archive
-
 - name: Categories
   url: /categories/
   icon: fas fa-th-list
+  children:
+    - name: 개발
+      url: /categories/개발/
+      icon: fas fa-laptop-code
+    - name: 학습
+      url: /categories/학습/
+      icon: fas fa-book
+    - name: Jekyll
+      url: /categories/Jekyll/
+      icon: fab fa-jekyll
+    - name: Python
+      url: /categories/Python/
+      icon: fab fa-python
+    - name: 자료구조
+      url: /categories/자료구조/
+      icon: fas fa-code
 
 - name: Tags
   url: /tags/
   icon: fas fa-tags
 
+- name: Archives
+  url: /archives/
+  icon: fas fa-archive
+
 - name: About
   url: /about/
   icon: fas fa-user
-
-# Category-specific tabs
-- name: 학습
-  url: /categories/학습/
-  icon: fas fa-book
-  children:
-    - name: 자료구조와 알고리즘
-      url: /categories/자료구조와-알고리즘/
-      icon: fas fa-code
-    - name: Python
-      url: /categories/Python/
-      icon: fab fa-python
-    - name: 웹개발
-      url: /categories/웹개발/
-      icon: fas fa-globe
-
-- name: 프로젝트
-  url: /categories/프로젝트/
-  icon: fas fa-project-diagram
-  children:
-    - name: 웹개발
-      url: /categories/웹개발/
-      icon: fas fa-globe
-    - name: 모바일
-      url: /categories/모바일/
-      icon: fas fa-mobile-alt
-
-- name: 개발
-  url: /categories/개발/
-  icon: fas fa-laptop-code
-  children:
-    - name: Jekyll
-      url: /categories/Jekyll/
-      icon: fab fa-jekyll
-    - name: GitHub
-      url: /categories/GitHub/
-      icon: fab fa-github
