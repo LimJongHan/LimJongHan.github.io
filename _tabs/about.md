@@ -17,19 +17,13 @@ order: 4
 ## 🛠️ 기술 스택
 
 ### 언어
-- JavaScript, TypeScript
 - Python
-- Java
 
 ### 프레임워크 & 라이브러리
-- React, Vue.js
-- Node.js
-- Spring Boot
 
 ### 도구
 - Git, GitHub
-- Docker
-- AWS, GCP
+
 
 ## 📝 이 블로그에서 다루는 내용
 
@@ -41,7 +35,7 @@ order: 4
 ## 📬 연락처
 
 - **GitHub**: [@LimJongHan](https://github.com/LimJongHan)
-- **이메일**: [이메일 주소를 입력하세요]
+- **이메일**: [@email]jonghan0330@gmail.com
 
 ## 🎉 마무리
 
