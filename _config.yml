@@ -196,6 +196,12 @@ sass:
   style: compressed
   sass_dir: assets/css
 
+# Image optimization
+image_optimization:
+  enabled: true
+  compress: true
+  quality: 85
+
 compress_html:
   clippings: all
   comments: all

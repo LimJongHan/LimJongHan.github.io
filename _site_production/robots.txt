@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://limjonghan.github.io/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /_site/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Allow all content
+Allow: /posts/
+Allow: /categories/
+Allow: /tags/
+Allow: /assets/
