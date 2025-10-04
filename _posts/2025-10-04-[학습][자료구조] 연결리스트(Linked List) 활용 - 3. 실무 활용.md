@@ -1213,7 +1213,7 @@ if __name__ == "__main__":
 # 📚 레퍼런스
 - [LRU Cache Implementation - GeeksforGeeks](https://www.geeksforgeeks.org/lru-cache-implementation/)
 - [Command Pattern - Refactoring Guru](https://refactoring.guru/design-patterns/command)
-- [Game Programming Patterns - Robert Nystrom](http://gameprogrammingpatterns.com/)
+- [Game Programming Patterns - Robert Nystrom](https://gameprogrammingpatterns.com/)
 
 ---
 *이 포스트는 자료구조 학습 과정을 정리한 내용입니다.*
