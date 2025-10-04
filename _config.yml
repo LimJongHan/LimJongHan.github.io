@@ -230,3 +230,9 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# Sitemap configuration
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  lastmod: true
