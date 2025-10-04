@@ -9,9 +9,9 @@ toc: true
 ---
 
 # 📖 관련된 내 포스팅
-- [[학습] [자료구조] 연결리스트(Linked List)]({% post_url 2025-10-04-연결리스트(Linked-List) %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-연결리스트(Linked-List)-활용-1-예제 %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-연결리스트(Linked-List)-활용-3-실무-활용 %})
+- [[학습] [자료구조] 연결리스트(Linked List)]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) %})
+- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %})
+- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용 %})
 
 # 📝 내용
 
@@ -989,7 +989,7 @@ if __name__ == "__main__":
 
 **다음 학습 계획**
 다음 포스트에서는 이러한 연결리스트들을 실제 프로젝트에 적용하는 방법을 알아보겠습니다:
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-연결리스트(Linked-List)-활용-3-실무-활용 %}) - LRU 캐시, 편집기, 게임 엔진 등
+- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용 %}) - LRU 캐시, 편집기, 게임 엔진 등
 
 # 📚 레퍼런스
 - [Doubly Linked List - GeeksforGeeks](https://www.geeksforgeeks.org/doubly-linked-list/)
