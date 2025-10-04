@@ -94,6 +94,15 @@ toc: true
 - **자동 검증**: 포스트 작성 후 HTML Proofer로 검증 필수
 - **오류 패턴**: `is not an HTTPS link` 오류 발생 시 즉시 수정
 
+#### 외부 링크 작성 규칙
+- **레퍼런스 섹션**: 모든 외부 링크는 HTTPS로 작성
+- **일반적인 사이트들**:
+  - `http://gameprogrammingpatterns.com/` → `https://gameprogrammingpatterns.com/`
+  - `http://highscalability.com/` → `https://highscalability.com/`
+  - `http://example.com/` → `https://example.com/`
+- **링크 작성 시**: 항상 `https://`로 시작하는지 확인
+- **검증 방법**: `grep -r "http://" _posts/` 명령어로 HTTP 링크 검색
+
 #### post_url 태그 규칙
 - **파일명 정확성**: `post_url` 태그에서 정확한 파일명 사용
 - **형식**: `{% post_url YYYY-MM-DD-[대주제][소주제]제목 %}` (확장자 제외)
@@ -161,15 +170,17 @@ toc: true
 - [ ] **HTML Proofer 검증 통과** (링크, 이미지, 스크립트 검증)
 - [ ] **post_url 태그 정확성 확인** (파일명 전체 경로)
 - [ ] **외부 링크 HTTPS 확인** (http:// 사용 금지)
+- [ ] **레퍼런스 링크 검증**: `grep -r "http://" _posts/` 실행하여 HTTP 링크 없음 확인
 
 ## 🚀 배포 프로세스
 
 1. 로컬에서 미리보기: `bundle exec jekyll serve`
-2. **HTML Proofer 검증**: `JEKYLL_ENV=production bundle exec jekyll build && bundle exec htmlproofer _site --disable-external`
-3. **오류 수정**: HTML Proofer 오류 발생 시 즉시 수정
-4. 변경사항 커밋: `git add . && git commit -m "message"`
-5. GitHub에 푸시: `git push origin main`
-6. GitHub Pages에서 확인
+2. **HTTP 링크 검증**: `grep -r "http://" _posts/` 실행하여 HTTP 링크 없음 확인
+3. **HTML Proofer 검증**: `JEKYLL_ENV=production bundle exec jekyll build && bundle exec htmlproofer _site --disable-external`
+4. **오류 수정**: HTML Proofer 오류 발생 시 즉시 수정
+5. 변경사항 커밋: `git add . && git commit -m "message"`
+6. GitHub에 푸시: `git push origin main`
+7. GitHub Pages에서 확인
 
 ## 📅 날짜 확인 방법
 
