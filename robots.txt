@@ -1,6 +1,10 @@
 User-agent: *
 Allow: /
 
+# Naverbot (네이버 검색엔진)
+User-agent: Yeti
+Allow: /
+
 # Sitemap
 Sitemap: https://limjonghan.github.io/sitemap.xml
 
