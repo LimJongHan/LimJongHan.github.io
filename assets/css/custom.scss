@@ -88,6 +88,52 @@
   opacity: 1;
 }
 
+/* 중첩 드롭다운 스타일 */
+.sidebar .dropdown-menu .dropdown-item.dropdown-toggle {
+  position: relative;
+}
+
+.sidebar .dropdown-menu .dropdown-item.dropdown-toggle::after {
+  content: '\f105'; /* Font Awesome chevron-right */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.sidebar .dropdown-menu .dropdown-item.dropdown-toggle.show::after {
+  transform: rotate(90deg);
+}
+
+/* 중첩 드롭다운 메뉴 */
+.sidebar .dropdown-menu .dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  margin-left: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.25rem 0;
+  min-width: 160px;
+  animation: slideInRight 0.3s ease;
+}
+
+.sidebar .dropdown-menu .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  margin: 0 0.25rem;
+  border-radius: 6px;
+}
+
+.sidebar .dropdown-menu .dropdown-menu .dropdown-item:hover {
+  transform: translateX(3px);
+}
+
 /* 드롭다운 애니메이션 */
 @keyframes slideDown {
   from {
@@ -97,6 +143,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -115,6 +172,21 @@
   color: white;
 }
 
+/* 다크 테마 중첩 드롭다운 */
+[data-theme="dark"] .sidebar .dropdown-menu .dropdown-menu {
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .sidebar .dropdown-menu .dropdown-menu .dropdown-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="dark"] .sidebar .dropdown-menu .dropdown-menu .dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
 /* 라이트 테마 지원 */
 [data-theme="light"] .sidebar .dropdown-menu {
   background: rgba(255, 255, 255, 0.95);
@@ -129,6 +201,22 @@
 [data-theme="light"] .sidebar .dropdown-menu .dropdown-item:hover {
   background: rgba(0, 0, 0, 0.05);
   color: #000;
+}
+
+/* 라이트 테마 중첩 드롭다운 */
+[data-theme="light"] .sidebar .dropdown-menu .dropdown-menu {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .sidebar .dropdown-menu .dropdown-menu .dropdown-item {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+[data-theme="light"] .sidebar .dropdown-menu .dropdown-menu .dropdown-item:hover {
+  background: rgba(0, 0, 0, 0.08);
+  color: #222;
 }
 
 [data-theme="light"] .sidebar .nav-item.dropdown > .nav-link:hover {

@@ -9,21 +9,22 @@
   url: /categories/
   icon: fas fa-th-list
   children:
-    - name: 개발
-      url: /categories/개발/
-      icon: fas fa-laptop-code
     - name: 학습
       url: /categories/학습/
       icon: fas fa-book
+      children:
+        - name: Python
+          url: /categories/Python/
+          icon: fab fa-python
+        - name: 자료구조
+          url: /categories/자료구조/
+          icon: fas fa-code
+    - name: 개발
+      url: /categories/개발/
+      icon: fas fa-laptop-code
     - name: Jekyll
       url: /categories/Jekyll/
       icon: fab fa-jekyll
-    - name: Python
-      url: /categories/Python/
-      icon: fab fa-python
-    - name: 자료구조
-      url: /categories/자료구조/
-      icon: fas fa-code
 
 - name: Tags
   url: /tags/
