@@ -233,6 +233,7 @@ jekyll-archives:
 
 # Sitemap configuration
 sitemap:
+  url: https://limjonghan.github.io
   changefreq: weekly
   priority: 0.5
   lastmod: true
