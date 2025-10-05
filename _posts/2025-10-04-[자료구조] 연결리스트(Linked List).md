@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "[학습] [자료구조] 연결리스트(Linked List)"
+title: "[자료구조] 연결리스트(Linked List)"
 date: 2025-10-04 10:34:00 +0900
-categories: [학습, 자료구조]
+categories: [자료구조, 연결리스트]
 tags: [연결리스트, Linked List, 자료구조, 포인터, 노드, 선형자료구조]
 author: LimJongHan
 toc: true
 ---
 
 # 📖 관련된 내 포스팅
-- [[학습] [자료구조] 배열(Array)]({% post_url 2025-10-03-[학습][자료구조] 배열(Array) %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현 %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용 %})
+- [[자료구조] 배열(Array)]({% post_url 2025-10-03-[자료구조] 배열(Array) %})
+- [[자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %})
+- [[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현 %})
+- [[자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용 %})
 
 # 📝 내용
 
@@ -559,7 +559,7 @@ if __name__ == "__main__":
 
 **다음 학습 계획**
 다음 포스트에서는 연결리스트를 활용한 기본 문제 해결 예제들을 알아보겠습니다:
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %}) - 역순 만들기, 병합, 중복 제거 등
+- [[자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %}) - 역순 만들기, 병합, 중복 제거 등
 
 # 📚 레퍼런스
 - [Linked List Data Structure - GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/linked-list/)

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "[학습] [Python] datetime 라이브러리"
+title: "[Python] [datetime] datetime 라이브러리"
 date: 2025-10-02 21:30:00 +0900
-categories: [학습, Python]
+categories: [Python, datetime]
 tags: [Python, datetime, 날짜시간, 표준라이브러리, 프로그래밍]
 author: LimJongHan
 toc: true
 ---
 # 📖 관련된 내 포스팅
+- [[Python] [Arrow] Arrow 라이브러리]({% post_url 2025-10-02-[Python][Arrow] Arrow 라이브러리 %})
 
 # 📝 내용
 

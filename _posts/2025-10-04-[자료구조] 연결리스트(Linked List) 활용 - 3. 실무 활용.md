@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "[학습] [자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용"
+title: "[자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용"
 date: 2025-10-04 10:50:00 +0900
-categories: [학습, 자료구조]
+categories: [자료구조, 연결리스트]
 tags: [연결리스트, Linked List, 실무활용, LRU캐시, 편집기, 게임엔진, 시스템설계]
 author: LimJongHan
 toc: true
 ---
 
 # 📖 관련된 내 포스팅
-- [[학습] [자료구조] 연결리스트(Linked List)]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %})
-- [[학습] [자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현]({% post_url 2025-10-04-[학습][자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현 %})
+- [[자료구조] 연결리스트(Linked List)]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) %})
+- [[자료구조] 연결리스트(Linked List) 활용 - 1. 예제]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 1. 예제 %})
+- [[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현 %})
 
 # 📝 내용
 

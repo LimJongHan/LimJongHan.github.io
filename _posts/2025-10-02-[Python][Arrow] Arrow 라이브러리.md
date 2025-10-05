@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[학습] [Python] Arrow 라이브러리"
+title: "[Python] [Arrow] Arrow 라이브러리"
 date: 2025-10-02 21:50:00 +0900
-categories: [학습, Python]
+categories: [Python, Arrow]
 tags: [Python, Arrow, datetime, 날짜시간, 외부라이브러리, 프로그래밍]
 author: LimJongHan
 toc: true
 ---
 # 📖 관련된 내 포스팅
-- [datetime 라이브러리](https://limjonghan.github.io/posts/%ED%95%99%EC%8A%B5-Python-datetime-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC-1/)
+- [[Python] [datetime] datetime 라이브러리]({% post_url 2025-10-02-[Python][datetime] datetime 라이브러리 %})
 
 # 📝 내용
 
