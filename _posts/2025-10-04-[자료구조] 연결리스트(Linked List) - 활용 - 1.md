@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[자료구조] 연결리스트(Linked List) 활용 - 1. 예제"
+title: "[자료구조] 연결리스트(Linked List) - 활용 - 1"
 date: 2025-10-04 10:40:00 +0900
 categories: [자료구조, 연결리스트]
 tags: [연결리스트, Linked List, 예제, 문제해결, 알고리즘, 코딩테스트]
@@ -9,9 +9,9 @@ toc: true
 ---
 
 # 📖 관련된 내 포스팅
-- [[자료구조] 연결리스트(Linked List)]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) %})
-- [[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현 %})
-- [[자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 3. 실무 활용 %})
+- [[자료구조] 연결리스트(Linked List) - 기본 예제]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) - 기본 예제 %})
+- [[자료구조] 연결리스트(Linked List) - 활용 - 2]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) - 활용 - 2 %})
+- [[자료구조] 연결리스트(Linked List) - 활용 - 3]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) - 활용 - 3 %})
 
 # 📝 내용
 
@@ -773,7 +773,7 @@ if __name__ == "__main__":
 
 **다음 학습 계획**
 다음 포스트에서는 더 고급 연결리스트 구현들에 대해 알아보겠습니다:
-- [[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) 활용 - 2. 고급 구현 %}) - 이중 연결리스트, 원형 연결리스트 등
+- [[자료구조] 연결리스트(Linked List) - 활용 - 2]({% post_url 2025-10-04-[자료구조] 연결리스트(Linked List) - 활용 - 2 %}) - 이중 연결리스트, 원형 연결리스트 등
 
 # 📚 레퍼런스
 - [Linked List Problems - LeetCode](https://leetcode.com/tag/linked-list/)
