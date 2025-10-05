@@ -19,20 +19,20 @@
         - name: 자료구조
           url: /categories/자료구조/
           icon: fas fa-code
-    - name: 개발
-      url: /categories/개발/
-      icon: fas fa-laptop-code
-    - name: Jekyll
-      url: /categories/Jekyll/
-      icon: fab fa-jekyll
+    - name: 기술
+      url: /categories/기술/
+      icon: fas fa-cogs
+      children:
+        - name: 개발
+          url: /categories/개발/
+          icon: fas fa-laptop-code
+        - name: Jekyll
+          url: /categories/Jekyll/
+          icon: fab fa-jekyll
 
 - name: Tags
   url: /tags/
   icon: fas fa-tags
-
-- name: Archives
-  url: /archives/
-  icon: fas fa-archive
 
 - name: About
   url: /about/
