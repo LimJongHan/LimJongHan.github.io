@@ -1,0 +1,180 @@
+// ============================================
+// 드롭다운 메뉴 스타일
+// ============================================
+
+// 드롭다운 컨테이너
+.sidebar .nav-item.dropdown {
+  position: relative;
+}
+
+// 드롭다운 토글 버튼
+.sidebar .nav-item.dropdown > .nav-link {
+  @include flex-between;
+  transition: $transition-default;
+
+  &:hover {
+    background-color: $sidebar-hover-dark;
+    border-radius: $border-radius-medium;
+  }
+}
+
+// 드롭다운 화살표 아이콘
+.sidebar .nav-item.dropdown > .nav-link::after {
+  content: '\f107'; // Font Awesome chevron-down
+  font-family: 'Font Awesome 5 Free';
+  font-weight: $font-weight-black;
+  transition: transform $transition-default;
+  margin-left: auto;
+}
+
+// 드롭다운 열림 상태
+.sidebar .nav-item.dropdown.show > .nav-link::after {
+  transform: rotate(180deg);
+}
+
+// 드롭다운 메뉴
+.sidebar .dropdown-menu {
+  @include dropdown-base;
+  background: $sidebar-dropdown-bg;
+  border: 1px solid $border-dark;
+  @include shadow('lg');
+  padding: $spacing-sm 0;
+  margin-left: $spacing-lg;
+  margin-right: $spacing-lg;
+  @include animation(slideDown);
+}
+
+// 드롭다운 메뉴 아이템
+.sidebar .dropdown-menu .dropdown-item {
+  @include dropdown-item-base;
+  color: $text-dark;
+  font-size: $font-size-md;
+  
+  @include hover-effect($sidebar-hover-dark, $text-dark-hover);
+
+  &:active {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+// 드롭다운 아이템 아이콘
+.sidebar .dropdown-menu .dropdown-item i {
+  margin-right: $spacing-md;
+  width: 16px;
+  text-align: center;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// ============================================
+// 중첩 드롭다운 스타일
+// ============================================
+
+.sidebar .dropdown-menu .dropdown-item.dropdown-toggle {
+  position: relative;
+
+  &::after {
+    content: '\f105'; // Font Awesome chevron-right
+    font-family: 'Font Awesome 5 Free';
+    font-weight: $font-weight-black;
+    position: absolute;
+    right: $spacing-lg;
+    transition: transform $transition-default;
+  }
+
+  &.show::after {
+    transform: rotate(90deg);
+  }
+}
+
+// 중첩 드롭다운 메뉴
+.sidebar .dropdown-menu .dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  margin-left: $spacing-sm;
+  background: $sidebar-dropdown-bg;
+  border: 1px solid $border-dark;
+  border-radius: $border-radius-medium;
+  @include shadow('md');
+  backdrop-filter: $blur-amount;
+  padding: $spacing-xs 0;
+  min-width: 160px;
+  @include animation(slideInRight);
+}
+
+.sidebar .dropdown-menu .dropdown-menu .dropdown-item {
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-size-sm;
+  margin: 0 $spacing-xs;
+  border-radius: $border-radius-small;
+
+  @include hover-effect($sidebar-hover-dark, $text-dark-hover, translateX(3px));
+}
+
+// ============================================
+// 테마별 스타일
+// ============================================
+
+// 다크 테마
+[data-theme="dark"] {
+  .sidebar .dropdown-menu {
+    background: $dropdown-bg-dark;
+    border-color: $border-dark;
+  }
+
+  .sidebar .dropdown-menu .dropdown-item {
+    color: $text-dark;
+
+    @include hover-effect($sidebar-hover-dark, $text-dark-hover);
+  }
+
+  // 다크 테마 중첩 드롭다운
+  .sidebar .dropdown-menu .dropdown-menu {
+    background: $dropdown-bg-dark-nested;
+    border-color: $border-dark-nested;
+
+    .dropdown-item {
+      color: rgba(255, 255, 255, 0.7);
+
+      @include hover-effect($sidebar-hover-dark, $text-dark-hover);
+    }
+  }
+}
+
+// 라이트 테마
+[data-theme="light"] {
+  .sidebar .dropdown-menu {
+    background: $dropdown-bg-light;
+    border-color: $border-light;
+    @include shadow('md');
+  }
+
+  .sidebar .dropdown-menu .dropdown-item {
+    color: $text-light;
+
+    @include hover-effect($sidebar-hover-light, $text-light-hover);
+  }
+
+  // 라이트 테마 중첩 드롭다운
+  .sidebar .dropdown-menu .dropdown-menu {
+    background: $dropdown-bg-light-nested;
+    border-color: $border-light-nested;
+    @include shadow('md');
+
+    .dropdown-item {
+      color: rgba(0, 0, 0, 0.7);
+
+      @include hover-effect(rgba(0, 0, 0, 0.08), #222);
+    }
+  }
+
+  .sidebar .nav-item.dropdown > .nav-link:hover {
+    background-color: $sidebar-hover-light;
+  }
+}
+

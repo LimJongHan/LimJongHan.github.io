@@ -1,0 +1,113 @@
+// ============================================
+// 믹스인 (Mixins)
+// ============================================
+
+// 드롭다운 기본 스타일
+@mixin dropdown-base {
+  position: static;
+  float: none;
+  width: 100%;
+  margin-top: 0;
+  border-radius: $border-radius-large;
+  backdrop-filter: $blur-amount;
+}
+
+// 드롭다운 아이템 기본 스타일
+@mixin dropdown-item-base {
+  padding: $spacing-md $spacing-xl;
+  border: none;
+  background: transparent;
+  transition: $transition-default;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+// 호버 효과
+@mixin hover-effect($bg-color, $text-color, $transform: translateX(5px)) {
+  &:hover {
+    background: $bg-color;
+    color: $text-color;
+    transform: $transform;
+  }
+}
+
+// 애니메이션 키프레임 생성
+@mixin animation($name, $duration: $animation-default, $easing: ease) {
+  animation: $name $duration $easing;
+}
+
+// 반응형 미디어 쿼리
+@mixin mobile {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Flexbox 중앙 정렬
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 그림자 효과
+@mixin shadow($size: 'md') {
+  @if $size == 'sm' {
+    box-shadow: $shadow-sm;
+  } @else if $size == 'md' {
+    box-shadow: $shadow-md;
+  } @else if $size == 'lg' {
+    box-shadow: $shadow-lg;
+  } @else if $size == 'xl' {
+    box-shadow: $shadow-xl;
+  }
+}
+
+// 텍스트 생략
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// GPU 가속
+@mixin gpu-acceleration {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+// 코드 블록 언어 배지
+@mixin code-language-badge {
+  position: absolute;
+  top: $spacing-sm;
+  right: $spacing-sm;
+  padding: $spacing-xs $spacing-md;
+  border-radius: $border-radius-medium;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  transition: opacity $transition-fast;
+  z-index: 10;
+}
+

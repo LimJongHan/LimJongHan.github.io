@@ -1,0 +1,129 @@
+// ============================================
+// 반응형 디자인
+// ============================================
+
+// 모바일 (최대 576px)
+@include mobile {
+  .sidebar .dropdown-menu {
+    margin-left: $spacing-sm;
+    margin-right: $spacing-sm;
+  }
+  
+  .sidebar .dropdown-menu .dropdown-item {
+    padding: $spacing-sm $spacing-lg;
+    font-size: $font-size-sm;
+  }
+
+  .sidebar .dropdown-menu .dropdown-menu {
+    position: static;
+    left: 0;
+    margin-left: $spacing-lg;
+    margin-top: $spacing-xs;
+  }
+
+  .highlight pre {
+    padding: $spacing-lg $spacing-md;
+    font-size: $font-size-xs;
+  }
+
+  .highlight::before {
+    font-size: 0.65rem;
+    padding: $spacing-xs $spacing-sm;
+  }
+}
+
+// 태블릿 (최대 768px)
+@include tablet {
+  .sidebar .dropdown-menu {
+    margin-left: $spacing-md;
+    margin-right: $spacing-md;
+  }
+
+  .highlight pre {
+    font-size: $font-size-sm;
+  }
+}
+
+// 데스크톱 (최소 1024px)
+@include desktop {
+  .sidebar .dropdown-menu .dropdown-menu {
+    &:hover {
+      @include shadow('xl');
+    }
+  }
+
+  .highlight {
+    &:hover {
+      @include shadow('xl');
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// 와이드 스크린 (최소 1440px)
+@media (min-width: $breakpoint-wide) {
+  .highlight pre {
+    font-size: $font-size-md;
+    padding: $spacing-xxl $spacing-xl * 1.5;
+  }
+}
+
+// 다크 모드 미디어 쿼리
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    code {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ff79c6;
+    }
+  }
+}
+
+// 라이트 모드 미디어 쿼리
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    code {
+      background: rgba(0, 0, 0, 0.05);
+      color: #e83e8c;
+    }
+  }
+}
+
+// 프린트 스타일
+@media print {
+  .sidebar,
+  .dropdown-menu {
+    display: none;
+  }
+
+  .highlight {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .highlight::before {
+    display: none;
+  }
+}
+
+// 고대비 모드
+@media (prefers-contrast: high) {
+  .highlight {
+    border: 2px solid currentColor;
+  }
+
+  code {
+    border: 1px solid currentColor;
+  }
+}
+
+// 애니메이션 감소 설정 (접근성)
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

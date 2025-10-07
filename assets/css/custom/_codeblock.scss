@@ -1,0 +1,162 @@
+// ============================================
+// 코드 블록 스타일
+// ============================================
+
+// 코드 블록 전체 컨테이너
+.highlight {
+  position: relative;
+  margin: $spacing-xl 0;
+  border-radius: $border-radius-xlarge;
+  overflow: hidden;
+  @include shadow('lg');
+  @include animation(fadeInUp);
+  @include gpu-acceleration;
+}
+
+// 코드 블록 헤더 (언어 표시)
+.highlight::before {
+  @include code-language-badge;
+  content: attr(data-lang);
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+// 언어별 배경 그라데이션
+.highlight[data-lang="python"]::before,
+.highlight pre.language-python::before {
+  background: $code-bg-gradient-1;
+}
+
+.highlight[data-lang="javascript"]::before,
+.highlight pre.language-javascript::before {
+  background: $code-bg-gradient-2;
+}
+
+.highlight[data-lang="ruby"]::before,
+.highlight pre.language-ruby::before {
+  background: $code-bg-gradient-3;
+}
+
+.highlight[data-lang="java"]::before,
+.highlight pre.language-java::before {
+  background: $code-bg-gradient-4;
+}
+
+.highlight[data-lang="css"]::before,
+.highlight pre.language-css::before,
+.highlight[data-lang="scss"]::before,
+.highlight pre.language-scss::before {
+  background: $code-bg-gradient-5;
+}
+
+.highlight[data-lang="shell"]::before,
+.highlight pre.language-shell::before,
+.highlight[data-lang="bash"]::before,
+.highlight pre.language-bash::before {
+  background: $code-bg-gradient-6;
+}
+
+// 코드 블록 내부 스타일
+.highlight pre {
+  margin: 0;
+  padding: $spacing-xxl $spacing-xl;
+  background: #2d2d2d;
+  color: #f8f8f2;
+  overflow-x: auto;
+  line-height: 1.6;
+  border-radius: $border-radius-xlarge;
+}
+
+// 코드 라인 번호
+.highlight .lineno {
+  color: #666;
+  margin-right: $spacing-lg;
+  user-select: none;
+  border-right: 1px solid #444;
+  padding-right: $spacing-md;
+}
+
+// 코드 텍스트
+.highlight code {
+  font-family: 'Fira Code', 'Monaco', 'Courier New', monospace;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-normal;
+  letter-spacing: 0.3px;
+}
+
+// 인라인 코드
+code {
+  padding: $spacing-xs $spacing-sm;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: $border-radius-small;
+  font-family: 'Fira Code', 'Monaco', 'Courier New', monospace;
+  font-size: $font-size-sm;
+  color: #e83e8c;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] code {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ff79c6;
+}
+
+// 코드 블록 스크롤바 (WebKit)
+.highlight pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.highlight pre::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: $border-radius-small;
+}
+
+.highlight pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: $border-radius-small;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+
+// 코드 블록 스크롤바 (Firefox)
+.highlight pre {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2);
+}
+
+// 코드 블록 복사 버튼 (추가 기능)
+.highlight .code-copy-button {
+  position: absolute;
+  top: $spacing-md;
+  right: $spacing-md;
+  padding: $spacing-xs $spacing-md;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: $border-radius-small;
+  cursor: pointer;
+  font-size: $font-size-xs;
+  transition: $transition-fast;
+  opacity: 0;
+  z-index: 20;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.highlight:hover .code-copy-button {
+  opacity: 1;
+}
+
+// 코드 하이라이트 (선택된 라인)
+.highlight .hll {
+  background-color: rgba(255, 255, 0, 0.1);
+  display: block;
+  margin: 0 (-$spacing-xl);
+  padding: 0 $spacing-xl;
+  border-left: 3px solid #ffd700;
+}
+
